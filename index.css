@@ -1,6 +1,30 @@
 .header_app{
     background-color: green;
-    color: black;
+    color: white;
     font-weight: 600;
     text-transform: uppercase;
+    padding: 10px 10px;
 }
+
+.main_app{
+    margin: 10px 10px;
+}
+
+.li_module{
+    font-weight: 600;
+    color: green;
+    outline: 2pt solid green;
+    background-color: white;
+    max-width: 100px;
+    text-align: center;
+    border-radius: 8px;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.li_module:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+

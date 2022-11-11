@@ -3,6 +3,10 @@ let header_app = document.querySelector(".header_app")
 let main_app = document.querySelector(".main_app")
 let footer_app = document.querySelector(".footer_app")
 
+let modules = [
+    "login"
+]
+
 export async function renderHeader(type) {
 
     if ( type == 'first' ) {
@@ -16,4 +20,33 @@ export async function renderHeader(type) {
 
 }
 
+export async function renderMain(type) {
+
+    if ( type == 'modules' ) {
+
+        let ul_modules = document.createElement("ul")
+
+            modules.forEach((module) => {
+
+                let li_module = document.createElement("li")
+
+                li_module.classList.add("li_module")
+
+                li_module.innerText = module
+
+                li_module.addEventListener("click", () => {
+                    window.location.assign("./modules/login/index.html")
+                })
+                
+                ul_modules.appendChild(li_module)
+
+            })
+
+            main_app.appendChild(ul_modules)
+
+    }
+
+}
+
 renderHeader('first')
+renderMain('modules')
