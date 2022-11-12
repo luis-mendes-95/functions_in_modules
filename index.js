@@ -48,5 +48,20 @@ export async function renderMain(type) {
 
 }
 
+export async function renderFooter(type) {
+
+    if (type == 'first') {
+
+        let span_footer = document.createElement("span")
+        span_footer.classList.add("span_footer")
+        span_footer.innerText = "Modules ready for use. Copy, paste and customize as you need"
+
+        footer_app.appendChild(span_footer)
+
+    }
+
+}
+
 renderHeader('first')
 renderMain('modules')
+renderFooter('first')

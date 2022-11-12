@@ -1,0 +1,121 @@
+body{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header_app {
+    background-color: green;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.main_app {
+    margin: 10px 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.div_login {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+}
+
+.div_login > input {
+    padding: 5px;
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(224, 224, 224);
+}
+
+.div_login > input:focus{
+    outline: 2pt solid rgb(255, 255, 255);
+}
+
+.div_register > input {
+    padding: 5px;
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(224, 224, 224);
+}
+
+.div_register > input:focus{
+    outline: 2pt solid green;
+}
+
+.button_submit, .button_back{
+    padding: 5px;
+    border: none;
+    border-radius: 8px;
+    background-color: green;
+    outline: 2pt solid white;
+    color: white;
+    transition: 0.3s;
+}
+
+.button_register, .button_close {
+    padding: 5px;
+    border: none;
+    border-radius: 8px;
+    background-color: white;
+    outline: 2pt solid green;
+    color: green;
+    transition: 0.3s;
+}
+
+button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.div_register{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 25%;
+}
+
+.div_background_modal {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-color: #000000b5;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.div_modal_info {
+    background-color: white;
+    width: 30%;
+    height: 30%;
+    padding: 30px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.footer_app {
+    background-color: green;
+    color: white;
+    font-weight: 600;
+    padding: 10px;
+    text-align: center;
+}
+
+.p_modal_content{
+    text-align: center;
+}
